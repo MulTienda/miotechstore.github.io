@@ -1,0 +1,229 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+    font-family: sans-serif;
+}
+header .advice{
+
+    background:#19613F;
+    text-align: center;
+    color: #fff;
+    padding: 4px;
+
+}
+
+header .logo{
+    display: flex;
+    justify-content: center;
+}
+
+header .logo .fa-desktop,header .logo h2{
+
+    padding: 8px;
+    font-size: 30px;
+}
+
+.menu{
+    height: 50px;
+    background: #46A075;
+    position: sticky;
+    top:0;
+
+}
+.contenedor{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+.menu .navegacion{
+    height: 100%;
+    text-align: center;
+}
+ .menu .navegacion .menu_opciones{
+     height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+
+}
+
+ .menu .navegacion>.menu_opciones>li{
+    height: 100%;
+    position: relative;
+
+}
+.menu .navegacion>.menu_opciones>li>a{
+    height: 100%;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+
+}
+.menu .navegacion>ul>li:hover{
+    background-color: #19613F;
+    transition: all 300ms ease;
+    transform: scale(1.1);
+}
+.menu .navegacion>ul>li>a>i{
+    margin-left: 10px;
+}
+
+
+/* -----------------submenu------------------ */
+.menu .navegacion ul li ul{
+    visibility:hidden;
+    flex-direction: column;
+    background-color:#46A075 ;
+    position: absolute;
+    list-style: none;
+    top: 100%;
+}
+.menu .navegacion ul li ul li{
+    width: 100%;
+    text-align: left;
+
+}
+.menu .navegacion ul li ul li a{
+    display: block;
+    padding: 16px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+.menu .navegacion ul li ul li:hover{
+    background-color: #19613F;
+    transition: all 300ms ease;
+    transform: scale(1.1);
+}
+.menu .navegacion ul li:hover ul{
+
+    visibility: visible;
+
+
+}
+/* fondo */
+
+ .fondo{
+    width: 100%;
+    height: 700px;
+}
+
+ .fondo img{
+    width: inherit;
+    height: inherit;
+}
+
+/* ----------------MAIN---------------------- */
+
+.fondo-caracteristicas{
+    background: #46A075;
+}
+.caracteristicas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.caracteristicas-envio,.caracteristicas-entrega,.caracteristicas-garantia{
+    display: flex;
+    color: #fff;
+    font-size: 20px;
+}
+
+.caracteristicas p, .caracteristicas i{
+    padding: 16px 4px;
+}
+
+.procesador h2{
+    text-align: center;
+    padding: 70px 20px 20px 20px;
+}
+
+.galeria-procesador{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.procesador .galeria-procesador .producto{
+
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding:8px;
+    margin: 8px;
+    width: 200px;
+    overflow: hidden;
+    box-shadow: 4px 4px 10px 2px rgba(181,181,181,1);
+    -webkit-box-shadow: 4px 4px 10px 2px rgba(181,181,181,1);
+    -moz-box-shadow: 4px 4px 10px 2px rgba(181,181,181,1);
+}
+.procesador .galeria-procesador .producto img{
+
+    height: 200px;    
+
+}
+.procesador .galeria-procesador .producto-nombre{
+    text-align: center;
+    align-self: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin:8px 0
+}
+
+.procesador .galeria-procesador .producto-precio{
+    align-self: center;
+    font-size: 28px;
+    color: #19613F;
+    margin: 8px;
+}
+
+.procesador .galeria-procesador .producto-boton{
+    display:inline-block;
+    border:none;
+    color: #fff;
+    background-color: rgba(219, 93, 61, 0.979);
+    margin: auto;
+    padding: 8px 20px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+
+.procesador .galeria-procesador .producto:hover .producto-boton {
+    transition: all 300ms ease;
+  opacity: 1;
+}
+
+footer{
+    margin-top: 20px;
+    background-color: #343435;
+    color: #fff;
+}
+
+footer .redes-sociales{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+footer .redes-sociales i{
+    padding: 0px 10px;
+}
+
+footer p{
+    padding: 5px;
+    text-align: center;
+}
+
